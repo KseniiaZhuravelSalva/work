@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Account Sign In</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230918123103">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+							<li class="menu__item"><a href="catalog.html" class="menu__link">Clothes</a></li>
+							<li class="menu__item"><a href="catalog.html" class="menu__link">Shoes</a></li>
+							<li class="menu__item"><a href="catalog.html" class="menu__link">Accessories</a></li>
+						</ul>
+					</nav>
+				</div>
+				<a href="" class="header__logo"><img src="img/logo.svg" alt="logo" /></a>
+				<div class="header__actions actions-header">
+					<form action="" class="actions-header__search search-header">
+						<div class="search-header__body">
+							<input data-required autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder="Search" class="search-header__input" />
+							<button type="submit" class="search-header__button _icon-search"></button>
+						</div>
+						<button type="button" class="search-header__icon _icon-search"></button>
+					</form>
+					<a href="account-information.html" class="actions-header__item _icon-user"></a>
+					<a href="account-shopping-cart.html" class="actions-header__item _icon-cart"></a>
+					<a href="account-favorites.html" class="actions-header__item _icon-favourite"></a>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__account-info account-info">
+				<div class="account-info__container">
+					<div class="account-info__message">
+						<h2 class="account-info__main-title">Hello there!</h2>
+						<div class="account-info__text">Please sign in or create account to continue</div>
+					</div>
+					<div class="account-info__content_compact">
+						<div class="account-info__column">
+							<div class="account-info__information">
+								<form action="#" class="account-info__form form-account">
+									<div class="form-account__body">
+										<h2 class="account-info__title">SIGN IN</h2>
+										<div class="form-account__line">
+											<label for="r-1" class="form-account__label">Email</label>
+											<input id="r-1" autocomplete="off" type="text" name="form[]" data-required="email" data-error="Error" placeholder="" class="form-account__input">
+										</div>
+
+										<div class="form-account__line">
+											<label for="r-2" class="form-account__label">Password</label>
+											<input id="r-2" autocomplete="off" type="password" name="form[]" data-required="email" data-error="Error" placeholder="" class="form-account__input">
+										</div>
+
+										<div class="form-account__line">
+											<div class="form-account__checkbox checkbox">
+												<input id="r-3" data-error="Error" class="checkbox__input" type="checkbox" value="1" name="form[]">
+												<label for="r-3" class="checkbox__label"><span class="checkbox__text">Remeber my details</span></label>
+											</div>
+										</div>
+										<button type="submit" class="form-account__button button _fw">SIGN IN</button>
+									</div>
+									<div class="form-account__password">
+										<a href="" class="form-account__link">Forgot password?</a>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="account-info__column">
+							<div class="account-info__information">
+								<form action="#" class="account-info__form form-account">
+									<div class="form-account__body">
+										<h2 class="account-info__title">CREATE ACCOUNT</h2>
+										<div class="form-account__line">
+											<label for="f-1" class="form-account__label">First name</label>
+											<input id="f-1" autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="" class="form-account__input">
+										</div>
+										<div class="form-account__line">
+											<label for="f-2" class="form-account__label">Last name</label>
+											<input id="f-2" autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="" class="form-account__input">
+										</div>
+										<div class="form-account__line">
+											<label for="f-3" class="form-account__label">Email</label>
+											<input id="f-3" autocomplete="off" type="text" name="form[]" data-error="Error" data-required="email" data-error="Error" placeholder="" class="form-account__input">
+										</div>
+										<div class="form-account__line">
+											<label for="f-4" class="form-account__label">Create Password</label>
+											<input id="f-4" autocomplete="off" type="password" name="form[]" data-error="Error" data-required="email" data-error="Error" placeholder="" class="form-account__input">
+										</div>
+										<div class="form-account__line">
+											<label for="f-5" class="form-account__label">Confirm Password</label>
+											<input id="f-5" autocomplete="off" type="password" name="form[]" data-error="Error" data-required="email" data-error="Error" placeholder="" class="form-account__input">
+										</div>
+
+										<div class="form-account__line">
+											<div class="form-account__checkbox checkbox">
+												<input id="f-6" data-error="Error" class="checkbox__input" type="checkbox" value="1" name="form[]">
+												<label for="f-6" class="checkbox__label"><span class="checkbox__text">I want to receive Safari newsletters with the best deals
+														and offers
+													</span></label>
+											</div>
+										</div>
+										<button type="submit" class="form-account__button button _fw">CREATE ACCOUNT</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container_content">
+				<div class="footer__logo">
+					<a href="" class="footer__link-logo"><img src="img/logo.svg" alt="logo"></a>
+				</div>
+				<div class="footer__body">
+					<div class="footer__menu menu-footer">
+						<nav class="menu-footer__list">
+							<ul class="menu-footer__items">
+								<li class="menu-footer__item"><a href="" class="menu-footer__link">About Us</a></li>
+								<li class="menu-footer__item"><a href="" class="menu-footer__link">Contacts</a></li>
+								<li class="menu-footer__item"><a href="" class="menu-footer__link">Terms & Conditions</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__socials-menu menu-socials-footer">
+						<ul class="menu-socials-footer__list">
+							<li class="menu-socials-footer__item"><a href="" class="menu-socials-footer__link _icon-fb">Facebook</a></li>
+							<li class="menu-socials-footer__item"><a href="" class="menu-socials-footer__link _icon-tw">Twitter</a></li>
+							<li class="menu-socials-footer__item"><a href="" class="menu-socials-footer__link _icon-ig">Instagram</a></li>
+						</ul>
+					</div>
+					<div class="footer__subscribe subscribe-footer">
+						<h4 class="subscribe-footer__title">Subscribe to our newsletters</h4>
+						<form class="subscribe-footer__form" action="files/sendmail/sendmail.php" method="POST">
+							<input data-required="email" autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Email Address" class="subscribe-footer__input">
+							<button type="submit" class="subscribe-footer__button">OK</button>
+						</form>
+					</div>
+				</div>
+				<div class="footer__contacts contacts-footer">
+					<div class="contacts-footer__item"><a href="https://goo.gl/maps/KbTqtbcHWYUgzzYZA">497 Evergreen Rd. Roseville, CA 95673</a></div>
+					<div class="contacts-footer__item"><a href="tel:+44345678903">+44 345 678 903</a></div>
+					<div class="contacts-footer__item"><a href="adobex@mail.com">adobex@mail.com</a></div>
+				</div>
+			</div>
+		</footer>
+
+
+
+	</div>
+	<script src="js/app.min.js?_v=20230918123103"></script>
+</body>
+
+</html>

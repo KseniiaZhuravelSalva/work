@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Account Information</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230918123103">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+							<li class="menu__item"><a href="catalog.html" class="menu__link">Clothes</a></li>
+							<li class="menu__item"><a href="catalog.html" class="menu__link">Shoes</a></li>
+							<li class="menu__item"><a href="catalog.html" class="menu__link">Accessories</a></li>
+						</ul>
+					</nav>
+				</div>
+				<a href="" class="header__logo"><img src="img/logo.svg" alt="logo" /></a>
+				<div class="header__actions actions-header">
+					<form action="" class="actions-header__search search-header">
+						<div class="search-header__body">
+							<input data-required autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder="Search" class="search-header__input" />
+							<button type="submit" class="search-header__button _icon-search"></button>
+						</div>
+						<button type="button" class="search-header__icon _icon-search"></button>
+					</form>
+					<a href="account-information.html" class="actions-header__item _icon-user"></a>
+					<a href="account-shopping-cart.html" class="actions-header__item _icon-cart"></a>
+					<a href="account-favorites.html" class="actions-header__item _icon-favourite"></a>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__account-info account-info">
+				<div class="account-info__container_content">
+					<div class="account-info__content account-info__content_menu">
+						<aside class="account-info__side-menu side-menu-account">
+							<h2 class="side-menu-account__title">ACCOUNT DASHBOARD</h2>
+							<ul class="side-menu-account__items">
+								<li class="side-menu-account__item  side-menu-account__item_active">
+									<a href="account-information.html" class="side-menu-account__link _icon-account-user">Account Information</a>
+								</li>
+								<li class="side-menu-account__item">
+									<a href="account-address.html" class="side-menu-account__link _icon-account-book">Address Book</a>
+								</li>
+								<li class="side-menu-account__item">
+									<a href="account-my-orders.html" class="side-menu-account__link _icon-account-orders">My Orders</a>
+								</li>
+								<li class="side-menu-account__item">
+									<a href="account-favorites.html" class="side-menu-account__link _icon-account-favourite">My Favorites</a>
+								</li>
+							</ul>
+							<button type="button" class="side-menu-account__sign-out _icon-sign-out"><a href="account-sign-in.html">SIGN OUT</a></button>
+						</aside>
+						<div class="account-info__information">
+							<h2 class="account-info__title">User Information</h2>
+							<form action="#" class="account-info__form form-account">
+								<div class="form-account__content">
+									<div class="form-account__line">
+										<label for="i-1" class="form-account__label">First name</label>
+										<input id="i-1" autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="" class="form-account__input" />
+									</div>
+									<div class="form-account__line">
+										<label for="i-2" class="form-account__label">Last name</label>
+										<input id="i-2" autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="" class="form-account__input" />
+									</div>
+									<div class="form-account__line">
+										<label for="i-3" class="form-account__label">Email</label>
+										<input id="i-3" autocomplete="off" type="text" name="form[]" data-error="Error" data-required="email" data-error="Error" placeholder="" class="form-account__input" />
+									</div>
+									<div class="form-account__line">
+										<label for="i-4" class="form-account__label">Gender</label>
+										<select id="4" name="form[]" data-class-modif="account">
+											<option value="1" selected>Male</option>
+											<option value="2">Female</option>
+										</select>
+									</div>
+									<div class="form-account__line">
+										<label for="i-5" class="form-account__label">Date of birth</label>
+										<input id="i-5" autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="" class="form-account__input" />
+									</div>
+									<div class="form-account__line">
+										<label for="i-5" class="form-account__label">Current password</label>
+										<input id="i-5" autocomplete="off" type="password" name="form[]" data-error="Error" placeholder="" class="form-account__input" />
+									</div>
+									<div class="form-account__line">
+										<label for="i-5" class="form-account__label">New password</label>
+										<input id="i-5" autocomplete="off" type="password" name="form[]" data-error="Error" placeholder="" class="form-account__input" />
+									</div>
+									<div class="form-account__line">
+										<label for="i-5" class="form-account__label">Confirm new password</label>
+										<input id="i-5" autocomplete="off" type="password" name="form[]" data-error="Error" placeholder="" class="form-account__input" />
+									</div>
+									<div class="form-account__line">
+										<a href="" class="form-account__pass-link">Change password</a>
+									</div>
+									<div class="form-account__line">
+										<div class="form-account__checkbox checkbox">
+											<input id="c_1" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+											<label for="c_1" class="checkbox__label"><span class="checkbox__text">Newsletter subsciption </span></label>
+										</div>
+									</div>
+								</div>
+								<button type="submit" class="form-account__button button">Save changes</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container_content">
+				<div class="footer__logo">
+					<a href="" class="footer__link-logo"><img src="img/logo.svg" alt="logo"></a>
+				</div>
+				<div class="footer__body">
+					<div class="footer__menu menu-footer">
+						<nav class="menu-footer__list">
+							<ul class="menu-footer__items">
+								<li class="menu-footer__item"><a href="" class="menu-footer__link">About Us</a></li>
+								<li class="menu-footer__item"><a href="" class="menu-footer__link">Contacts</a></li>
+								<li class="menu-footer__item"><a href="" class="menu-footer__link">Terms & Conditions</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__socials-menu menu-socials-footer">
+						<ul class="menu-socials-footer__list">
+							<li class="menu-socials-footer__item"><a href="" class="menu-socials-footer__link _icon-fb">Facebook</a></li>
+							<li class="menu-socials-footer__item"><a href="" class="menu-socials-footer__link _icon-tw">Twitter</a></li>
+							<li class="menu-socials-footer__item"><a href="" class="menu-socials-footer__link _icon-ig">Instagram</a></li>
+						</ul>
+					</div>
+					<div class="footer__subscribe subscribe-footer">
+						<h4 class="subscribe-footer__title">Subscribe to our newsletters</h4>
+						<form class="subscribe-footer__form" action="files/sendmail/sendmail.php" method="POST">
+							<input data-required="email" autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Email Address" class="subscribe-footer__input">
+							<button type="submit" class="subscribe-footer__button">OK</button>
+						</form>
+					</div>
+				</div>
+				<div class="footer__contacts contacts-footer">
+					<div class="contacts-footer__item"><a href="https://goo.gl/maps/KbTqtbcHWYUgzzYZA">497 Evergreen Rd. Roseville, CA 95673</a></div>
+					<div class="contacts-footer__item"><a href="tel:+44345678903">+44 345 678 903</a></div>
+					<div class="contacts-footer__item"><a href="adobex@mail.com">adobex@mail.com</a></div>
+				</div>
+			</div>
+		</footer>
+
+
+
+	</div>
+	<script src="js/app.min.js?_v=20230918123103"></script>
+</body>
+
+</html>

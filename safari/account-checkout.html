@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Account Checkout</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230918123103">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+							<li class="menu__item"><a href="catalog.html" class="menu__link">Clothes</a></li>
+							<li class="menu__item"><a href="catalog.html" class="menu__link">Shoes</a></li>
+							<li class="menu__item"><a href="catalog.html" class="menu__link">Accessories</a></li>
+						</ul>
+					</nav>
+				</div>
+				<a href="" class="header__logo"><img src="img/logo.svg" alt="logo" /></a>
+				<div class="header__actions actions-header">
+					<form action="" class="actions-header__search search-header">
+						<div class="search-header__body">
+							<input data-required autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder="Search" class="search-header__input" />
+							<button type="submit" class="search-header__button _icon-search"></button>
+						</div>
+						<button type="button" class="search-header__icon _icon-search"></button>
+					</form>
+					<a href="account-information.html" class="actions-header__item _icon-user"></a>
+					<a href="account-shopping-cart.html" class="actions-header__item _icon-cart"></a>
+					<a href="account-favorites.html" class="actions-header__item _icon-favourite"></a>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__account-info account-info">
+				<div class="account-info__container_content">
+					<form action="#" class="account-info__form">
+						<div class="account-info__content">
+							<div class="account-info__column">
+								<div class="account-info__block ">
+									<h2 class="account-info__title account-info__title_margin _icon-circle-tick">Shipping Address</h2>
+									<div class="form-account">
+										<div class="form-account__block">
+											<div class="form-account__line">
+												<label for="i-1" class="form-account__label">Email</label>
+												<input id="i-1" autocomplete="off" type="text" name="form[]" data-error="Error" data-required="email" data-error="Error" placeholder="" class="form-account__input">
+											</div>
+											<div class="form-account__line">
+												<label for="i-2" class="form-account__label">Full name</label>
+												<input id="i-2" autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="" class="form-account__input">
+											</div>
+											<div class="form-account__line">
+												<label for="i-3" class="form-account__label">Address</label>
+												<textarea id="i-3" autocomplete="off" name="form[]" placeholder="" data-error="Error" class="form-account__input"></textarea>
+											</div>
+											<div class="form-account__line">
+												<label for="i-4" class="form-account__label">State/Province</label>
+												<select id="i-4" name="form[]" data-class-modif="account" style="z-index: 10;">
+													<option value="1">Kyiv</option>
+													<option value="2">Lviv</option>
+													<option value="3">Kharkiv</option>
+													<option value="3">Chernihiv</option>
+												</select>
+											</div>
+											<div class="form-account__line">
+												<label for="i-5" class="form-account__label">City</label>
+												<select id="i-5" name="form[]" data-class-modif="account">
+													<option value="1">Kyiv</option>
+													<option value="2">Lviv</option>
+													<option value="3">Kharkiv</option>
+													<option value="3">Chernihiv</option>
+												</select>
+											</div>
+											<div class="form-account__line">
+												<label for="i-6" class="form-account__label">Phone number</label>
+												<input id="i-6" autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="" class="form-account__input">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="account-info__column">
+								<div class="account-info__block">
+									<h2 class="account-info__title account-info__title_done _icon-circle-tick">Delivery method</h2>
+									<div class="account-info__delivery options">
+										<div class="options__item">
+											<input id="o_1" class="options__input" checked type="radio" value="1" name="delivery">
+											<label for="o_1" class="options__label"><span class="options__text">₦ 2,000</span></label>
+										</div>
+										<div class="options__item">
+											<input id="o_2" class="options__input" type="radio" value="2" name="delivery">
+											<label for="o_2" class="options__label"><span class="options__text">Delivery fee</span></label>
+										</div>
+										<div class="options__item">
+											<input id="o_3" class="options__input" type="radio" value="2" name="delivery">
+											<label for="o_3" class="options__label"><span class="options__text">Door delivery</span></label>
+										</div>
+									</div>
+								</div>
+								<div class="account-info__block">
+									<h2 class="account-info__title account-info__title_done _icon-circle-tick">Payment Methods</h2>
+									<div class="account-info__payments options">
+										<div class="options__item">
+											<input id="o_4" class="options__input" checked type="radio" value="1" name="payments">
+											<label for="o_4" class="options__label"><span class="options__text">Pay with card <small>(Get 5% off total price and money back guarantee)</small></span></label>
+											<div class="options__info">You will be redirected to Paystack payment gateway</div>
+										</div>
+										<div class="options__item">
+											<input id="o_5" class="options__input" type="radio" value="2" name="payments">
+											<label for="o_5" class="options__label">
+												<span class="options__text">Pay on delivery</span>
+											</label>
+											<ul class="options__list">
+												<li>Kindly note that we will only accept POS payment option on delivery</li>
+												<li>You have to make payment before opening package</li>
+												<li>Once the seal is broken, item can only be returned if damaged or defective </li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="account-info__column">
+								<div class="account-info__order order-account">
+									<div class="order-account__body">
+										<h2 class="order-account__title">ORDER SUMMARY</h2>
+										<div class="order-account__list">
+											<div class="order-account__item item-order-account">
+												<a href="#" class="item-order-account__image-ibg">
+													<picture><source srcset="img/order/01.webp" type="image/webp"><img src="img/order/01.png" alt="image"></picture>
+												</a>
+												<div class="item-order-account__body">
+													<a href="" class="item-order-account__title">Casual flat loafers</a>
+													<div class="item-order-account__size">Size - EU: 36 US: 5.5</div>
+													<div class="item-order-account__price">₦ 10,000</div>
+													<div class="item-order-account__quantity quantity-order-account">
+														<div class="quantity-order-account__label">Qty</div>
+														<div data-quantity class="quantity-order-account__body quantity">
+															<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+															<div class="quantity__input">
+																<input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+															</div>
+															<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="order-account__item item-order-account">
+												<a href="#" class="item-order-account__image-ibg">
+													<picture><source srcset="img/order/02.webp" type="image/webp"><img src="img/order/02.png" alt="image"></picture>
+												</a>
+												<div class="item-order-account__body">
+													<a href="" class="item-order-account__title">Multicolored armless top</a>
+													<div class="item-order-account__size">Size - XS</div>
+													<div class="item-order-account__price">₦ 10,000</div>
+													<div class="item-order-account__quantity quantity-order-account">
+														<div class="quantity-order-account__label">Qty</div>
+														<div data-quantity class="quantity-order-account__body quantity">
+															<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+															<div class="quantity__input">
+																<input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+															</div>
+															<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="order-account__prices prices-order-account">
+										<div class="prices-order-account__item item-price-order">
+											<div class="item-price-order__label">Cart sub-total</div>
+											<div class="item-price-order__value">₦ 20,000</div>
+										</div>
+										<div class="prices-order-account__item item-price-order">
+											<div class="item-price-order__label">Delivery fee</div>
+											<div class="item-price-order__value">₦ 2,000</div>
+										</div>
+									</div>
+									<div class="order-account__total total-order-account">
+										<div class="total-order-account__label">TOTAL</div>
+										<div class="total-order-account__value">₦ 22,000</div>
+									</div>
+								</div>
+								<div class="account-info__gift gift-account">
+									<div class="gift-account__body">
+										<div class="gift-account__label">Is this a gift?</div>
+										<div class="gift-account__actions">
+											<button type="button" class="gift-account__button gift-account__button_active">Yes</button>
+											<button type="button" class="gift-account__button">No</button>
+										</div>
+									</div>
+									<div class="gift-account__text">
+										A complimentary gift receipt will be included in the package, and prices will be hidden on the receipt.
+									</div>
+								</div>
+								<button type="button" class="account-info__button button _fw">PLACE ORDER</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container_content">
+				<div class="footer__logo">
+					<a href="" class="footer__link-logo"><img src="img/logo.svg" alt="logo"></a>
+				</div>
+				<div class="footer__body">
+					<div class="footer__menu menu-footer">
+						<nav class="menu-footer__list">
+							<ul class="menu-footer__items">
+								<li class="menu-footer__item"><a href="" class="menu-footer__link">About Us</a></li>
+								<li class="menu-footer__item"><a href="" class="menu-footer__link">Contacts</a></li>
+								<li class="menu-footer__item"><a href="" class="menu-footer__link">Terms & Conditions</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__socials-menu menu-socials-footer">
+						<ul class="menu-socials-footer__list">
+							<li class="menu-socials-footer__item"><a href="" class="menu-socials-footer__link _icon-fb">Facebook</a></li>
+							<li class="menu-socials-footer__item"><a href="" class="menu-socials-footer__link _icon-tw">Twitter</a></li>
+							<li class="menu-socials-footer__item"><a href="" class="menu-socials-footer__link _icon-ig">Instagram</a></li>
+						</ul>
+					</div>
+					<div class="footer__subscribe subscribe-footer">
+						<h4 class="subscribe-footer__title">Subscribe to our newsletters</h4>
+						<form class="subscribe-footer__form" action="files/sendmail/sendmail.php" method="POST">
+							<input data-required="email" autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Email Address" class="subscribe-footer__input">
+							<button type="submit" class="subscribe-footer__button">OK</button>
+						</form>
+					</div>
+				</div>
+				<div class="footer__contacts contacts-footer">
+					<div class="contacts-footer__item"><a href="https://goo.gl/maps/KbTqtbcHWYUgzzYZA">497 Evergreen Rd. Roseville, CA 95673</a></div>
+					<div class="contacts-footer__item"><a href="tel:+44345678903">+44 345 678 903</a></div>
+					<div class="contacts-footer__item"><a href="adobex@mail.com">adobex@mail.com</a></div>
+				</div>
+			</div>
+		</footer>
+
+
+
+	</div>
+	<script src="js/app.min.js?_v=20230918123103"></script>
+</body>
+
+</html>
