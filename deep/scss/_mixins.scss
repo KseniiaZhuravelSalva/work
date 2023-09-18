@@ -1,0 +1,14 @@
+//REM
+@function rem($px) {
+	$result: math.div($px, 16) + rem;
+	@return $result;
+}
+//EM
+@function em($px, $current: 16) {
+	$result: math.div($px, $current) + em;
+	@return $result;
+}
+
+$backgroundColor: #6257FE;
+$titleDark: #100C46;
+$headerTitle: #44322a;

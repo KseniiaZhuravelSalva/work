@@ -1,0 +1,61 @@
+.header-block {
+	&__label {
+            font-size: rem(16);
+            font-weight: 400;
+            color: $backgroundColor;
+            line-height: 1.375;
+	}
+	&__title {
+            font-family: 'Overpass';
+            font-size: rem(56);
+            font-weight: 700;
+            color: $titleDark;
+            line-height: 1.2678; /* 71/56 */
+            @media (max-width: rem(1200)) {
+                  font-size: rem(42);
+            }
+	}
+}
+
+.header-block_center {
+      text-align: center;
+}
+.text {
+      line-height: 1.6; /* 32/20 */
+      & p:not(:last-child) {
+            margin-bottom: rem(30);
+      }
+      @media (max-width: rem(1200)) {
+            font-size: rem(16);
+      }
+}
+
+.button {
+      display: inline-block;
+      padding: rem(19) rem(46);
+      font-size: rem(18);
+      font-weight: 600;
+      line-height: 1.8; /* 32/18 */
+      color: $titleDark;
+      background-color: #fff;
+      box-shadow: 0 rem(10) rem(50) rgba(0, 0, 0, 0.3);
+      border-radius: rem(3);
+      @media (max-width: rem(767.98)) {
+            width: 100%;
+            text-align: center;
+      }
+      transition: all 0.3s;
+      &:hover {
+            background-color: #7fb0be;
+            color: #fff;
+      }
+}
+
+.button--dark {
+      background-color: $backgroundColor;
+      color: #fff;
+      &:hover {
+            color: $titleDark;
+            background-color: #fff;
+      }
+}
